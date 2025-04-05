@@ -13,7 +13,6 @@ static constexpr utility::LinearMapping<float>::Params
 
 static constexpr EncoderSensor::Params kTillerEncoderParams{
     .degrees_per_encoder_tick{0.01F},
-    .max_difference_to_reference{2.0F},
 };
 
 } // namespace tiller::params
