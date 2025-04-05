@@ -285,6 +285,7 @@ test/CMakeFiles/tests.dir/sensors/gtest_potentiometer_sensor.cpp.obj: \
  C:/TillerProject/build/_deps/googletest-src/googlemock/include/gmock/gmock-nice-strict.h \
  C:/TillerProject/include/sensors/potentiometer_sensor.hpp \
  C:/TillerProject/include/abstracts/i_angle_sensor.hpp \
+ C:/TillerProject/include/abstracts/i_resettable.hpp \
  C:/TillerProject/include/params/tiller_params.hpp \
  C:/TillerProject/include/sensors/encoder_sensor.hpp \
  C:/TillerProject/include/abstracts/i_encoder_driver.hpp \

@@ -48,4 +48,12 @@ TEST_F(
               encoder_sensor.Read().value(), kTolerance);
 }
 
+TEST_F(EncoderSensorTest,
+       when_resetIsCalled_expect_angleToBeSetToTheGivenValue) {
+  static constexpr float kInitialAngle{35.0F};
+  EncoderSensor encoder_sensor{params::kTillerEncoderParams, mock_encoder};
+  encoder_sensor.Reset(kInitialAngle);
+  EXPECT_FLOAT_EQ(kInitialAngle, encoder_sensor.Read().value());
+}
+
 } // namespace tiller

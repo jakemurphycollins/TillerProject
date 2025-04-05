@@ -3,6 +3,7 @@ CMakeFiles/_Tiller.dir/src/sensors/potentiometer_sensor.cpp.obj: \
  C:/TillerProject/include/sensors/potentiometer_sensor.hpp \
  C:/TillerProject/include/abstracts/i_adc_driver.hpp \
  C:/TillerProject/include/abstracts/i_angle_sensor.hpp \
+ C:/TillerProject/include/abstracts/i_resettable.hpp \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/optional \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/version.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \

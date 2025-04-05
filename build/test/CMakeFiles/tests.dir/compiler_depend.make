@@ -40,6 +40,7 @@ test/CMakeFiles/tests.dir/sensors/gtest_encoder_sensor.cpp.obj: C:/TillerProject
   _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
   C:/TillerProject/include/abstracts/i_angle_sensor.hpp \
   C:/TillerProject/include/abstracts/i_encoder_driver.hpp \
+  C:/TillerProject/include/abstracts/i_resettable.hpp \
   C:/TillerProject/include/params/tiller_params.hpp \
   C:/TillerProject/include/sensors/encoder_sensor.hpp \
   C:/TillerProject/include/utilities/linear_mapping.hpp \
@@ -331,6 +332,7 @@ test/CMakeFiles/tests.dir/sensors/gtest_potentiometer_sensor.cpp.obj: C:/TillerP
   C:/TillerProject/include/abstracts/i_adc_driver.hpp \
   C:/TillerProject/include/abstracts/i_angle_sensor.hpp \
   C:/TillerProject/include/abstracts/i_encoder_driver.hpp \
+  C:/TillerProject/include/abstracts/i_resettable.hpp \
   C:/TillerProject/include/params/tiller_params.hpp \
   C:/TillerProject/include/sensors/encoder_sensor.hpp \
   C:/TillerProject/include/sensors/potentiometer_sensor.hpp \
@@ -699,15 +701,15 @@ C:/w64devkit/x86_64-w64-mingw32/include/sec_api/string_s.h:
 
 C:/TillerProject/include/abstracts/i_encoder_driver.hpp:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/charconv.h:
+C:/TillerProject/include/utilities/linear_mapping.hpp:
+
+C:/TillerProject/include/abstracts/i_resettable.hpp:
 
 C:/TillerProject/include/params/tiller_params.hpp:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/basic_ios.tcc:
 
 C:/TillerProject/include/sensors/encoder_sensor.hpp:
-
-C:/TillerProject/include/utilities/linear_mapping.hpp:
 
 C:/TillerProject/test/mocks/gmock_angle_sensor.hpp:
 
@@ -752,6 +754,8 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/atomic_lockfree_
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/pstl/execution_defs.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/char_traits.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/charconv.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h:
 

@@ -1,5 +1,6 @@
 #pragma once
 
+#include "i_resettable.hpp"
 #include <optional>
 
 namespace tiller {
@@ -8,7 +9,7 @@ namespace tiller {
  * @brief Interface describing a sensor that reads an angle
  *
  */
-class IAngleSensor {
+class IAngleSensor : public IResettable<float> {
 public:
   /**
    * @brief Reads the angle from the peripheral and returns it

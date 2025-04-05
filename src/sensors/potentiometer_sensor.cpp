@@ -15,4 +15,8 @@ std::optional<float> PotentiometerSensor::Read() {
   return std::nullopt;
 }
 
+void PotentiometerSensor::Reset(float /*init_state*/) {
+  // Do Nothing
+}
+
 } // namespace tiller

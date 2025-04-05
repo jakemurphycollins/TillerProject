@@ -19,4 +19,8 @@ std::optional<float> EncoderSensor::Read() {
   return this->current_angle_deg_;
 }
 
+void EncoderSensor::Reset(float init_state) {
+  this->current_angle_deg_ = init_state;
+}
+
 } // namespace tiller

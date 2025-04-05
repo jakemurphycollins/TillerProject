@@ -2,6 +2,7 @@ test/CMakeFiles/tests.dir/sensors/gtest_encoder_sensor.cpp.obj: \
  C:\TillerProject\test\sensors\gtest_encoder_sensor.cpp \
  C:/TillerProject/include/sensors/encoder_sensor.hpp \
  C:/TillerProject/include/abstracts/i_angle_sensor.hpp \
+ C:/TillerProject/include/abstracts/i_resettable.hpp \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/optional \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/version.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \

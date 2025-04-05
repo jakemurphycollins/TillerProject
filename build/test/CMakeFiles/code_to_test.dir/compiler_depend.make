@@ -4,6 +4,7 @@
 test/CMakeFiles/code_to_test.dir/__/src/sensors/encoder_sensor.cpp.obj: C:/TillerProject/src/sensors/encoder_sensor.cpp \
   C:/TillerProject/include/abstracts/i_angle_sensor.hpp \
   C:/TillerProject/include/abstracts/i_encoder_driver.hpp \
+  C:/TillerProject/include/abstracts/i_resettable.hpp \
   C:/TillerProject/include/sensors/encoder_sensor.hpp \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bit \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/concept_check.h \
@@ -88,6 +89,7 @@ test/CMakeFiles/code_to_test.dir/__/src/sensors/potentiometer_sensor.cpp.obj: C:
   C:/TillerProject/include/abstracts/i_adc_driver.hpp \
   C:/TillerProject/include/abstracts/i_angle_sensor.hpp \
   C:/TillerProject/include/abstracts/i_encoder_driver.hpp \
+  C:/TillerProject/include/abstracts/i_resettable.hpp \
   C:/TillerProject/include/params/tiller_params.hpp \
   C:/TillerProject/include/sensors/encoder_sensor.hpp \
   C:/TillerProject/include/sensors/potentiometer_sensor.hpp \
@@ -195,8 +197,6 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/specfun.h:
 
 C:/TillerProject/src/sensors/encoder_sensor.cpp:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/cxxabi_init_exception.h:
-
 C:/TillerProject/include/abstracts/i_angle_sensor.hpp:
 
 C:/TillerProject/include/sensors/encoder_sensor.hpp:
@@ -205,11 +205,15 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h:
 
 C:/TillerProject/include/abstracts/i_encoder_driver.hpp:
 
+C:/TillerProject/include/abstracts/i_resettable.hpp:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/concept_check.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/debug/assertions.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/cpp_type_traits.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/cxxabi_init_exception.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/enable_special_members.h:
 
