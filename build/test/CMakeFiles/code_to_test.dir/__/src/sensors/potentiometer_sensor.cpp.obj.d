@@ -40,6 +40,7 @@ test/CMakeFiles/code_to_test.dir/__/src/sensors/potentiometer_sensor.cpp.obj: \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/debug/assertions.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/utility.h \
  C:/TillerProject/include/params/tiller_params.hpp \
+ C:/TillerProject/include/sensors/combination_sensor.hpp \
  C:/TillerProject/include/sensors/encoder_sensor.hpp \
  C:/TillerProject/include/abstracts/i_encoder_driver.hpp \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/tests.dir/sensors/gtest_combination_sensor.cpp.obj"
+  "CMakeFiles/tests.dir/sensors/gtest_combination_sensor.cpp.obj.d"
   "CMakeFiles/tests.dir/sensors/gtest_encoder_sensor.cpp.obj"
   "CMakeFiles/tests.dir/sensors/gtest_encoder_sensor.cpp.obj.d"
   "CMakeFiles/tests.dir/sensors/gtest_potentiometer_sensor.cpp.obj"

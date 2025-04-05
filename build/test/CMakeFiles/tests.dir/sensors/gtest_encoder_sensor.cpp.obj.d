@@ -288,4 +288,5 @@ test/CMakeFiles/tests.dir/sensors/gtest_encoder_sensor.cpp.obj: \
  C:/TillerProject/build/_deps/googletest-src/googlemock/include/gmock/gmock-nice-strict.h \
  C:/TillerProject/test/mocks/gmock_encoder_driver.hpp \
  C:/TillerProject/include/params/tiller_params.hpp \
+ C:/TillerProject/include/sensors/combination_sensor.hpp \
  C:/TillerProject/include/utilities/linear_mapping.hpp

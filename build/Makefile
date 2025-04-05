@@ -275,6 +275,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/sensors/combination_sensor.obj: src/sensors/combination_sensor.cpp.obj
+.PHONY : src/sensors/combination_sensor.obj
+
+# target to build an object file
+src/sensors/combination_sensor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/sensors/combination_sensor.cpp.obj
+.PHONY : src/sensors/combination_sensor.cpp.obj
+
+src/sensors/combination_sensor.i: src/sensors/combination_sensor.cpp.i
+.PHONY : src/sensors/combination_sensor.i
+
+# target to preprocess a source file
+src/sensors/combination_sensor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/sensors/combination_sensor.cpp.i
+.PHONY : src/sensors/combination_sensor.cpp.i
+
+src/sensors/combination_sensor.s: src/sensors/combination_sensor.cpp.s
+.PHONY : src/sensors/combination_sensor.s
+
+# target to generate assembly for a file
+src/sensors/combination_sensor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/sensors/combination_sensor.cpp.s
+.PHONY : src/sensors/combination_sensor.cpp.s
+
+src/sensors/encoder_sensor.obj: src/sensors/encoder_sensor.cpp.obj
+.PHONY : src/sensors/encoder_sensor.obj
+
+# target to build an object file
+src/sensors/encoder_sensor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/sensors/encoder_sensor.cpp.obj
+.PHONY : src/sensors/encoder_sensor.cpp.obj
+
+src/sensors/encoder_sensor.i: src/sensors/encoder_sensor.cpp.i
+.PHONY : src/sensors/encoder_sensor.i
+
+# target to preprocess a source file
+src/sensors/encoder_sensor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/sensors/encoder_sensor.cpp.i
+.PHONY : src/sensors/encoder_sensor.cpp.i
+
+src/sensors/encoder_sensor.s: src/sensors/encoder_sensor.cpp.s
+.PHONY : src/sensors/encoder_sensor.s
+
+# target to generate assembly for a file
+src/sensors/encoder_sensor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/sensors/encoder_sensor.cpp.s
+.PHONY : src/sensors/encoder_sensor.cpp.s
+
 src/sensors/potentiometer_sensor.obj: src/sensors/potentiometer_sensor.cpp.obj
 .PHONY : src/sensors/potentiometer_sensor.obj
 
@@ -321,6 +369,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/sensors/combination_sensor.obj
+	@echo ... src/sensors/combination_sensor.i
+	@echo ... src/sensors/combination_sensor.s
+	@echo ... src/sensors/encoder_sensor.obj
+	@echo ... src/sensors/encoder_sensor.i
+	@echo ... src/sensors/encoder_sensor.s
 	@echo ... src/sensors/potentiometer_sensor.obj
 	@echo ... src/sensors/potentiometer_sensor.i
 	@echo ... src/sensors/potentiometer_sensor.s

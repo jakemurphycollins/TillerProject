@@ -188,6 +188,30 @@ tests/fast:
 	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\tests.dir\build.make test/CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
+__/src/sensors/combination_sensor.obj: __/src/sensors/combination_sensor.cpp.obj
+.PHONY : __/src/sensors/combination_sensor.obj
+
+# target to build an object file
+__/src/sensors/combination_sensor.cpp.obj:
+	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\code_to_test.dir\build.make test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.obj
+.PHONY : __/src/sensors/combination_sensor.cpp.obj
+
+__/src/sensors/combination_sensor.i: __/src/sensors/combination_sensor.cpp.i
+.PHONY : __/src/sensors/combination_sensor.i
+
+# target to preprocess a source file
+__/src/sensors/combination_sensor.cpp.i:
+	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\code_to_test.dir\build.make test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.i
+.PHONY : __/src/sensors/combination_sensor.cpp.i
+
+__/src/sensors/combination_sensor.s: __/src/sensors/combination_sensor.cpp.s
+.PHONY : __/src/sensors/combination_sensor.s
+
+# target to generate assembly for a file
+__/src/sensors/combination_sensor.cpp.s:
+	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\code_to_test.dir\build.make test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.s
+.PHONY : __/src/sensors/combination_sensor.cpp.s
+
 __/src/sensors/encoder_sensor.obj: __/src/sensors/encoder_sensor.cpp.obj
 .PHONY : __/src/sensors/encoder_sensor.obj
 
@@ -235,6 +259,30 @@ __/src/sensors/potentiometer_sensor.s: __/src/sensors/potentiometer_sensor.cpp.s
 __/src/sensors/potentiometer_sensor.cpp.s:
 	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\code_to_test.dir\build.make test/CMakeFiles/code_to_test.dir/__/src/sensors/potentiometer_sensor.cpp.s
 .PHONY : __/src/sensors/potentiometer_sensor.cpp.s
+
+sensors/gtest_combination_sensor.obj: sensors/gtest_combination_sensor.cpp.obj
+.PHONY : sensors/gtest_combination_sensor.obj
+
+# target to build an object file
+sensors/gtest_combination_sensor.cpp.obj:
+	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\tests.dir\build.make test/CMakeFiles/tests.dir/sensors/gtest_combination_sensor.cpp.obj
+.PHONY : sensors/gtest_combination_sensor.cpp.obj
+
+sensors/gtest_combination_sensor.i: sensors/gtest_combination_sensor.cpp.i
+.PHONY : sensors/gtest_combination_sensor.i
+
+# target to preprocess a source file
+sensors/gtest_combination_sensor.cpp.i:
+	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\tests.dir\build.make test/CMakeFiles/tests.dir/sensors/gtest_combination_sensor.cpp.i
+.PHONY : sensors/gtest_combination_sensor.cpp.i
+
+sensors/gtest_combination_sensor.s: sensors/gtest_combination_sensor.cpp.s
+.PHONY : sensors/gtest_combination_sensor.s
+
+# target to generate assembly for a file
+sensors/gtest_combination_sensor.cpp.s:
+	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\tests.dir\build.make test/CMakeFiles/tests.dir/sensors/gtest_combination_sensor.cpp.s
+.PHONY : sensors/gtest_combination_sensor.cpp.s
 
 sensors/gtest_encoder_sensor.obj: sensors/gtest_encoder_sensor.cpp.obj
 .PHONY : sensors/gtest_encoder_sensor.obj
@@ -298,12 +346,18 @@ help:
 	@echo ... rebuild_cache
 	@echo ... code_to_test
 	@echo ... tests
+	@echo ... __/src/sensors/combination_sensor.obj
+	@echo ... __/src/sensors/combination_sensor.i
+	@echo ... __/src/sensors/combination_sensor.s
 	@echo ... __/src/sensors/encoder_sensor.obj
 	@echo ... __/src/sensors/encoder_sensor.i
 	@echo ... __/src/sensors/encoder_sensor.s
 	@echo ... __/src/sensors/potentiometer_sensor.obj
 	@echo ... __/src/sensors/potentiometer_sensor.i
 	@echo ... __/src/sensors/potentiometer_sensor.s
+	@echo ... sensors/gtest_combination_sensor.obj
+	@echo ... sensors/gtest_combination_sensor.i
+	@echo ... sensors/gtest_combination_sensor.s
 	@echo ... sensors/gtest_encoder_sensor.obj
 	@echo ... sensors/gtest_encoder_sensor.i
 	@echo ... sensors/gtest_encoder_sensor.s

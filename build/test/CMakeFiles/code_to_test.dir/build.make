@@ -101,19 +101,36 @@ test/CMakeFiles/code_to_test.dir/__/src/sensors/encoder_sensor.cpp.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/code_to_test.dir/__/src/sensors/encoder_sensor.cpp.s"
 	cd /d C:\TillerProject\build\test && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\TillerProject\src\sensors\encoder_sensor.cpp -o CMakeFiles\code_to_test.dir\__\src\sensors\encoder_sensor.cpp.s
 
+test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.obj: test/CMakeFiles/code_to_test.dir/flags.make
+test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.obj: test/CMakeFiles/code_to_test.dir/includes_CXX.rsp
+test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.obj: C:/TillerProject/src/sensors/combination_sensor.cpp
+test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.obj: test/CMakeFiles/code_to_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.obj"
+	cd /d C:\TillerProject\build\test && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.obj -MF CMakeFiles\code_to_test.dir\__\src\sensors\combination_sensor.cpp.obj.d -o CMakeFiles\code_to_test.dir\__\src\sensors\combination_sensor.cpp.obj -c C:\TillerProject\src\sensors\combination_sensor.cpp
+
+test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.i"
+	cd /d C:\TillerProject\build\test && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\TillerProject\src\sensors\combination_sensor.cpp > CMakeFiles\code_to_test.dir\__\src\sensors\combination_sensor.cpp.i
+
+test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.s"
+	cd /d C:\TillerProject\build\test && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\TillerProject\src\sensors\combination_sensor.cpp -o CMakeFiles\code_to_test.dir\__\src\sensors\combination_sensor.cpp.s
+
 # Object files for target code_to_test
 code_to_test_OBJECTS = \
 "CMakeFiles/code_to_test.dir/__/src/sensors/potentiometer_sensor.cpp.obj" \
-"CMakeFiles/code_to_test.dir/__/src/sensors/encoder_sensor.cpp.obj"
+"CMakeFiles/code_to_test.dir/__/src/sensors/encoder_sensor.cpp.obj" \
+"CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.obj"
 
 # External object files for target code_to_test
 code_to_test_EXTERNAL_OBJECTS =
 
 test/libcode_to_test.a: test/CMakeFiles/code_to_test.dir/__/src/sensors/potentiometer_sensor.cpp.obj
 test/libcode_to_test.a: test/CMakeFiles/code_to_test.dir/__/src/sensors/encoder_sensor.cpp.obj
+test/libcode_to_test.a: test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.obj
 test/libcode_to_test.a: test/CMakeFiles/code_to_test.dir/build.make
 test/libcode_to_test.a: test/CMakeFiles/code_to_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcode_to_test.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libcode_to_test.a"
 	cd /d C:\TillerProject\build\test && $(CMAKE_COMMAND) -P CMakeFiles\code_to_test.dir\cmake_clean_target.cmake
 	cd /d C:\TillerProject\build\test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\code_to_test.dir\link.txt --verbose=$(VERBOSE)
 

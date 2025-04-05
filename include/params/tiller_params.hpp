@@ -1,4 +1,5 @@
 #pragma once
+#include "combination_sensor.hpp"
 #include "encoder_sensor.hpp"
 #include "linear_mapping.hpp"
 #include <utility>
@@ -21,6 +22,15 @@ static constexpr utility::LinearMapping<float>::Params
  */
 static constexpr EncoderSensor::Params kTillerEncoderParams{
     .degrees_per_encoder_tick{0.01F},
+};
+
+/**
+ * @brief Params for the combining the relative encoder with the absolute
+ * potentiometer
+ *
+ */
+static constexpr CombinationSensor::Params kTillerAngleSensorParams{
+    .max_drift_deg{2.0F},
 };
 
 } // namespace tiller::params

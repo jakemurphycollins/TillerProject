@@ -7,6 +7,18 @@
 },
 {
   "directory": "C:/TillerProject/build",
+  "command": "C:\\w64devkit\\bin\\c++.exe  @CMakeFiles/_Tiller.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\_Tiller.dir\\src\\sensors\\combination_sensor.cpp.obj -c C:\\TillerProject\\src\\sensors\\combination_sensor.cpp",
+  "file": "C:/TillerProject/src/sensors/combination_sensor.cpp",
+  "output": "CMakeFiles/_Tiller.dir/src/sensors/combination_sensor.cpp.obj"
+},
+{
+  "directory": "C:/TillerProject/build",
+  "command": "C:\\w64devkit\\bin\\c++.exe  @CMakeFiles/_Tiller.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\_Tiller.dir\\src\\sensors\\encoder_sensor.cpp.obj -c C:\\TillerProject\\src\\sensors\\encoder_sensor.cpp",
+  "file": "C:/TillerProject/src/sensors/encoder_sensor.cpp",
+  "output": "CMakeFiles/_Tiller.dir/src/sensors/encoder_sensor.cpp.obj"
+},
+{
+  "directory": "C:/TillerProject/build",
   "command": "C:\\w64devkit\\bin\\c++.exe  @CMakeFiles/_Tiller.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\_Tiller.dir\\main.cpp.obj -c C:\\TillerProject\\main.cpp",
   "file": "C:/TillerProject/main.cpp",
   "output": "CMakeFiles/_Tiller.dir/main.cpp.obj"
@@ -49,6 +61,12 @@
 },
 {
   "directory": "C:/TillerProject/build/test",
+  "command": "C:\\w64devkit\\bin\\c++.exe  @CMakeFiles/code_to_test.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\code_to_test.dir\\__\\src\\sensors\\combination_sensor.cpp.obj -c C:\\TillerProject\\src\\sensors\\combination_sensor.cpp",
+  "file": "C:/TillerProject/src/sensors/combination_sensor.cpp",
+  "output": "test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.obj"
+},
+{
+  "directory": "C:/TillerProject/build/test",
   "command": "C:\\w64devkit\\bin\\c++.exe  @CMakeFiles/tests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\tests.dir\\sensors\\gtest_potentiometer_sensor.cpp.obj -c C:\\TillerProject\\test\\sensors\\gtest_potentiometer_sensor.cpp",
   "file": "C:/TillerProject/test/sensors/gtest_potentiometer_sensor.cpp",
   "output": "test/CMakeFiles/tests.dir/sensors/gtest_potentiometer_sensor.cpp.obj"
@@ -58,5 +76,11 @@
   "command": "C:\\w64devkit\\bin\\c++.exe  @CMakeFiles/tests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\tests.dir\\sensors\\gtest_encoder_sensor.cpp.obj -c C:\\TillerProject\\test\\sensors\\gtest_encoder_sensor.cpp",
   "file": "C:/TillerProject/test/sensors/gtest_encoder_sensor.cpp",
   "output": "test/CMakeFiles/tests.dir/sensors/gtest_encoder_sensor.cpp.obj"
+},
+{
+  "directory": "C:/TillerProject/build/test",
+  "command": "C:\\w64devkit\\bin\\c++.exe  @CMakeFiles/tests.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\tests.dir\\sensors\\gtest_combination_sensor.cpp.obj -c C:\\TillerProject\\test\\sensors\\gtest_combination_sensor.cpp",
+  "file": "C:/TillerProject/test/sensors/gtest_combination_sensor.cpp",
+  "output": "test/CMakeFiles/tests.dir/sensors/gtest_combination_sensor.cpp.obj"
 }
 ]

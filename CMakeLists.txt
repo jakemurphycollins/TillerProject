@@ -20,6 +20,8 @@ FetchContent_MakeAvailable(googletest)
 add_library(
     _Tiller
     src/sensors/potentiometer_sensor.cpp
+    src/sensors/combination_sensor.cpp
+    src/sensors/encoder_sensor.cpp
     main.cpp
 )
 
@@ -27,7 +29,6 @@ target_include_directories(
     _Tiller PUBLIC
     include/
     include/abstracts/
-    include/drivers/
     include/sensors/
     include/utilities/
     include/params/

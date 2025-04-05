@@ -287,6 +287,7 @@ test/CMakeFiles/tests.dir/sensors/gtest_potentiometer_sensor.cpp.obj: \
  C:/TillerProject/include/abstracts/i_angle_sensor.hpp \
  C:/TillerProject/include/abstracts/i_resettable.hpp \
  C:/TillerProject/include/params/tiller_params.hpp \
+ C:/TillerProject/include/sensors/combination_sensor.hpp \
  C:/TillerProject/include/sensors/encoder_sensor.hpp \
  C:/TillerProject/include/abstracts/i_encoder_driver.hpp \
  C:/TillerProject/include/utilities/linear_mapping.hpp

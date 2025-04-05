@@ -2,6 +2,7 @@ add_library(
     code_to_test
     ../src/sensors/potentiometer_sensor.cpp
     ../src/sensors/encoder_sensor.cpp
+    ../src/sensors/combination_sensor.cpp
 )
 
 target_include_directories(
@@ -18,6 +19,7 @@ add_executable(
     tests
     sensors/gtest_potentiometer_sensor.cpp
     sensors/gtest_encoder_sensor.cpp
+    sensors/gtest_combination_sensor.cpp
 )
 
 target_include_directories(
