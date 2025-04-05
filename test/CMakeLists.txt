@@ -1,6 +1,7 @@
 add_library(
     code_to_test
     ../src/sensors/potentiometer_sensor.cpp
+    ../src/sensors/encoder_sensor.cpp
 )
 
 target_include_directories(
@@ -9,15 +10,18 @@ target_include_directories(
     ../include
     ../include/abstracts
     ../include/sensors
+    ../include/utilities
+    ../include/params
 )
 
 add_executable(
     tests
     sensors/gtest_potentiometer_sensor.cpp
+    sensors/gtest_encoder_sensor.cpp
 )
 
 target_include_directories(
-    tests PUBLIC 
+    tests PUBLIC
     mocks
 )
 target_link_libraries(

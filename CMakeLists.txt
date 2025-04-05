@@ -5,9 +5,12 @@ project(TillerProject)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+# Generate compile commands database
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
+
 include(FetchContent)
 FetchContent_Declare(
-    googletest 
+    googletest
     URL https://github.com/google/googletest/archive/6910c9d9165801d8827d628cb72eb7ea9dd538c5.zip
 )
 
@@ -21,11 +24,13 @@ add_library(
 )
 
 target_include_directories(
-    _Tiller PUBLIC 
+    _Tiller PUBLIC
     include/
     include/abstracts/
     include/drivers/
     include/sensors/
+    include/utilities/
+    include/params/
 )
 add_library(Tiller ALIAS _Tiller)
 

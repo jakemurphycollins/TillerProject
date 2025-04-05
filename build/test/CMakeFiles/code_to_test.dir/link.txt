@@ -1,0 +1,2 @@
+C:\w64devkit\bin\ar.exe qc libcode_to_test.a CMakeFiles/code_to_test.dir/__/src/sensors/potentiometer_sensor.cpp.obj CMakeFiles/code_to_test.dir/__/src/sensors/encoder_sensor.cpp.obj
+C:\w64devkit\bin\ranlib.exe libcode_to_test.a

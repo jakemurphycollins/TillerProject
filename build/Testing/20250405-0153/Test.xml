@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20250405-0153-Experimental"
+	Name="(empty)"
+	Generator="ctest-4.0.0"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Windows"
+	Hostname="LAPTOP-O1UO21LB"
+	OSRelease=" Professional"
+	OSVersion=" (Build 22631)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="14"
+	ModelName=""
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="26431"
+	TotalPhysicalMemory="16191"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2112"
+	>
+	<Testing>
+		<StartDateTime>Apr 04 21:53 Eastern Daylight Time</StartDateTime>
+		<StartTestTime>1743818023</StartTestTime>
+		<TestList/>
+		<EndDateTime>Apr 04 21:53 Eastern Daylight Time</EndDateTime>
+		<EndTestTime>1743818023</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

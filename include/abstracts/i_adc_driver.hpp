@@ -10,7 +10,7 @@ class IAdcDriver {
          * 
          * @return float 
          */
-        virtual float ReadVoltage() = 0;
+        [[nodiscard]] virtual float ReadVoltage() = 0;
 };
 
 }
