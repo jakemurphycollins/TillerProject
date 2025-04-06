@@ -4,5 +4,17 @@
         "ms-vscode.cmake-tools",
         "josetr.cmake-language-support-vscode",
         "vadimcn.vscode-lldb",
+        "cschlosser.doxdocgen",
+        "yzhang.markdown-all-in-one",
+        "matepek.vscode-catch2-test-adapter",
+        "njpwernet.autodocstring",
+        "ms-python.isort",
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.pylint",
+        "ms-python.vscode-pylance",
+        "njpwerner.autodocstring",
+        "marus25.cortex-debug",
+        "fordlabs.copyrighter",
     ]
 }

@@ -372,8 +372,8 @@ test/CMakeFiles/code_to_test.dir/clean:
 test/CMakeFiles/tests.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 test/CMakeFiles/tests.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 test/CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-test/CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 test/CMakeFiles/tests.dir/all: test/CMakeFiles/code_to_test.dir/all
+test/CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\tests.dir\build.make test/CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\tests.dir\build.make test/CMakeFiles/tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=18,19,20,21 "Built target tests"

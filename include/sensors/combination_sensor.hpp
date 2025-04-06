@@ -26,7 +26,7 @@ public:
    * @param primary_sensor Reference to the primary sensor
    * @param reference_sensor Reference to the reference sensor
    */
-  CombinationSensor(IAngleSensor &primary_sensor,
+  CombinationSensor(Params params, IAngleSensor &primary_sensor,
                     IAngleSensor &reference_sensor);
 
   /**
@@ -53,6 +53,7 @@ public:
   void Reset(float init_state) override;
 
 private:
+  Params params_; ///< Object specific parameters
   IAngleSensor
       *p_primary_sensor_; ///< Pointer to the primary sensor used by the device
   IAngleSensor *p_reference_sensor_; ///< Pointer to the reference sensor used

@@ -2,7 +2,6 @@ test/CMakeFiles/code_to_test.dir/__/src/sensors/encoder_sensor.cpp.obj: \
  C:\TillerProject\src\sensors\encoder_sensor.cpp \
  C:/TillerProject/include/sensors/encoder_sensor.hpp \
  C:/TillerProject/include/abstracts/i_angle_sensor.hpp \
- C:/TillerProject/include/abstracts/i_resettable.hpp \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/optional \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/version.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -38,6 +37,7 @@ test/CMakeFiles/code_to_test.dir/__/src/sensors/encoder_sensor.cpp.obj: \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/concept_check.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/debug/assertions.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/c++/bits/utility.h \
+ C:/TillerProject/include/abstracts/i_resettable.hpp \
  C:/TillerProject/include/abstracts/i_encoder_driver.hpp \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
  C:/w64devkit/x86_64-w64-mingw32/include/stdint.h \

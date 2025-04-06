@@ -1,8 +1,22 @@
 {
     "editor.formatOnSave": true,
     "editor.tabSize": 4,
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
     "lldb.displayFormat": "auto",
     "lldb.showDisassembly": "auto",
     "lldb.dereferencePointers": true,
-    "lldb.consoleMode": "commands"
+    "lldb.consoleMode": "commands",
+    "files.associations": {
+        "*.in": "plaintext",
+        ".clangd": "yaml"
+    },
+    "clangd.arguments": [
+        "--background-index",
+        "--query-driver=C:/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0",
+        "-std=c++17"
+    ],
+    "[cpp]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    }
 }

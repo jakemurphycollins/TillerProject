@@ -13,8 +13,9 @@ BraceWrapping:
     AfterStruct: true
     AfterUnion: true
     BeforeCatch: true
-    BeforeElese: true
+    BeforeElse: true
 BreakBeforeBraces: Custom
 
-SeperateDefinitionBlocks: Always
+SpaceBeforeParens: false
+
 QualifierAlignment: Left
