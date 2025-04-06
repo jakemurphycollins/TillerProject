@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/TillerProject/main.cpp" "CMakeFiles/_Tiller.dir/main.cpp.obj" "gcc" "CMakeFiles/_Tiller.dir/main.cpp.obj.d"
+  "C:/TillerProject/src/drivers/dummy_adc_driver.cpp" "CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.obj" "gcc" "CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.obj.d"
+  "C:/TillerProject/src/drivers/dummy_encoder_driver.cpp" "CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.obj" "gcc" "CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.obj.d"
   "C:/TillerProject/src/sensors/combination_sensor.cpp" "CMakeFiles/_Tiller.dir/src/sensors/combination_sensor.cpp.obj" "gcc" "CMakeFiles/_Tiller.dir/src/sensors/combination_sensor.cpp.obj.d"
   "C:/TillerProject/src/sensors/encoder_sensor.cpp" "CMakeFiles/_Tiller.dir/src/sensors/encoder_sensor.cpp.obj" "gcc" "CMakeFiles/_Tiller.dir/src/sensors/encoder_sensor.cpp.obj.d"
   "C:/TillerProject/src/sensors/potentiometer_sensor.cpp" "CMakeFiles/_Tiller.dir/src/sensors/potentiometer_sensor.cpp.obj" "gcc" "CMakeFiles/_Tiller.dir/src/sensors/potentiometer_sensor.cpp.obj.d"

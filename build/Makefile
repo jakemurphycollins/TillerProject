@@ -174,6 +174,19 @@ _Tiller/fast:
 .PHONY : _Tiller/fast
 
 #=============================================================================
+# Target rules for targets named simulation
+
+# Build rule for target.
+simulation: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 simulation
+.PHONY : simulation
+
+# fast build rule for target.
+simulation/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulation.dir\build.make CMakeFiles/simulation.dir/build
+.PHONY : simulation/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -225,38 +238,12 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-#=============================================================================
-# Target rules for targets named code_to_test
-
-# Build rule for target.
-code_to_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 code_to_test
-.PHONY : code_to_test
-
-# fast build rule for target.
-code_to_test/fast:
-	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\code_to_test.dir\build.make test/CMakeFiles/code_to_test.dir/build
-.PHONY : code_to_test/fast
-
-#=============================================================================
-# Target rules for targets named tests
-
-# Build rule for target.
-tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests
-.PHONY : tests
-
-# fast build rule for target.
-tests/fast:
-	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\tests.dir\build.make test/CMakeFiles/tests.dir/build
-.PHONY : tests/fast
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulation.dir\build.make CMakeFiles/simulation.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -264,7 +251,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulation.dir\build.make CMakeFiles/simulation.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -272,8 +259,56 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\simulation.dir\build.make CMakeFiles/simulation.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/drivers/dummy_adc_driver.obj: src/drivers/dummy_adc_driver.cpp.obj
+.PHONY : src/drivers/dummy_adc_driver.obj
+
+# target to build an object file
+src/drivers/dummy_adc_driver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.obj
+.PHONY : src/drivers/dummy_adc_driver.cpp.obj
+
+src/drivers/dummy_adc_driver.i: src/drivers/dummy_adc_driver.cpp.i
+.PHONY : src/drivers/dummy_adc_driver.i
+
+# target to preprocess a source file
+src/drivers/dummy_adc_driver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.i
+.PHONY : src/drivers/dummy_adc_driver.cpp.i
+
+src/drivers/dummy_adc_driver.s: src/drivers/dummy_adc_driver.cpp.s
+.PHONY : src/drivers/dummy_adc_driver.s
+
+# target to generate assembly for a file
+src/drivers/dummy_adc_driver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.s
+.PHONY : src/drivers/dummy_adc_driver.cpp.s
+
+src/drivers/dummy_encoder_driver.obj: src/drivers/dummy_encoder_driver.cpp.obj
+.PHONY : src/drivers/dummy_encoder_driver.obj
+
+# target to build an object file
+src/drivers/dummy_encoder_driver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.obj
+.PHONY : src/drivers/dummy_encoder_driver.cpp.obj
+
+src/drivers/dummy_encoder_driver.i: src/drivers/dummy_encoder_driver.cpp.i
+.PHONY : src/drivers/dummy_encoder_driver.i
+
+# target to preprocess a source file
+src/drivers/dummy_encoder_driver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.i
+.PHONY : src/drivers/dummy_encoder_driver.cpp.i
+
+src/drivers/dummy_encoder_driver.s: src/drivers/dummy_encoder_driver.cpp.s
+.PHONY : src/drivers/dummy_encoder_driver.s
+
+# target to generate assembly for a file
+src/drivers/dummy_encoder_driver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.s
+.PHONY : src/drivers/dummy_encoder_driver.cpp.s
 
 src/sensors/combination_sensor.obj: src/sensors/combination_sensor.cpp.obj
 .PHONY : src/sensors/combination_sensor.obj
@@ -408,15 +443,20 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... _Tiller
-	@echo ... code_to_test
 	@echo ... gmock
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... tests
+	@echo ... simulation
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/drivers/dummy_adc_driver.obj
+	@echo ... src/drivers/dummy_adc_driver.i
+	@echo ... src/drivers/dummy_adc_driver.s
+	@echo ... src/drivers/dummy_encoder_driver.obj
+	@echo ... src/drivers/dummy_encoder_driver.i
+	@echo ... src/drivers/dummy_encoder_driver.s
 	@echo ... src/sensors/combination_sensor.obj
 	@echo ... src/sensors/combination_sensor.i
 	@echo ... src/sensors/combination_sensor.s

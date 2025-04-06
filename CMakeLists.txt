@@ -24,7 +24,8 @@ add_library(
     src/sensors/encoder_sensor.cpp
     src/tta/scheduler.cpp
     src/tta/angle_sensor_task.cpp
-    main.cpp
+    src/drivers/dummy_adc_driver.cpp
+    src/drivers/dummy_encoder_driver.cpp
 )
 
 target_include_directories(
@@ -35,7 +36,18 @@ target_include_directories(
     include/utilities/
     include/params/
     include/tta/
+    include/drivers
 )
 add_library(Tiller ALIAS _Tiller)
 
-add_subdirectory(test)
+add_executable(
+    simulation
+    main.cpp
+)
+
+target_link_libraries(
+    simulation
+    Tiller
+)
+
+#add_subdirectory(test)

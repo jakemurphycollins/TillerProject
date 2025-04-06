@@ -1,3 +1,7 @@
+/*
+ *   Copyright (c) 2025 
+ *   All rights reserved.
+ */
 #pragma once
 
 #include "abstracts/i_adc_driver.hpp"

@@ -146,20 +146,35 @@ CMakeFiles/_Tiller.dir/src/tta/angle_sensor_task.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/_Tiller.dir/src/tta/angle_sensor_task.cpp.s"
 	C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\TillerProject\src\tta\angle_sensor_task.cpp -o CMakeFiles\_Tiller.dir\src\tta\angle_sensor_task.cpp.s
 
-CMakeFiles/_Tiller.dir/main.cpp.obj: CMakeFiles/_Tiller.dir/flags.make
-CMakeFiles/_Tiller.dir/main.cpp.obj: CMakeFiles/_Tiller.dir/includes_CXX.rsp
-CMakeFiles/_Tiller.dir/main.cpp.obj: C:/TillerProject/main.cpp
-CMakeFiles/_Tiller.dir/main.cpp.obj: CMakeFiles/_Tiller.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/_Tiller.dir/main.cpp.obj"
-	C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_Tiller.dir/main.cpp.obj -MF CMakeFiles\_Tiller.dir\main.cpp.obj.d -o CMakeFiles\_Tiller.dir\main.cpp.obj -c C:\TillerProject\main.cpp
+CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.obj: CMakeFiles/_Tiller.dir/flags.make
+CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.obj: CMakeFiles/_Tiller.dir/includes_CXX.rsp
+CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.obj: C:/TillerProject/src/drivers/dummy_adc_driver.cpp
+CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.obj: CMakeFiles/_Tiller.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.obj"
+	C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.obj -MF CMakeFiles\_Tiller.dir\src\drivers\dummy_adc_driver.cpp.obj.d -o CMakeFiles\_Tiller.dir\src\drivers\dummy_adc_driver.cpp.obj -c C:\TillerProject\src\drivers\dummy_adc_driver.cpp
 
-CMakeFiles/_Tiller.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/_Tiller.dir/main.cpp.i"
-	C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\TillerProject\main.cpp > CMakeFiles\_Tiller.dir\main.cpp.i
+CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.i"
+	C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\TillerProject\src\drivers\dummy_adc_driver.cpp > CMakeFiles\_Tiller.dir\src\drivers\dummy_adc_driver.cpp.i
 
-CMakeFiles/_Tiller.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/_Tiller.dir/main.cpp.s"
-	C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\TillerProject\main.cpp -o CMakeFiles\_Tiller.dir\main.cpp.s
+CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.s"
+	C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\TillerProject\src\drivers\dummy_adc_driver.cpp -o CMakeFiles\_Tiller.dir\src\drivers\dummy_adc_driver.cpp.s
+
+CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.obj: CMakeFiles/_Tiller.dir/flags.make
+CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.obj: CMakeFiles/_Tiller.dir/includes_CXX.rsp
+CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.obj: C:/TillerProject/src/drivers/dummy_encoder_driver.cpp
+CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.obj: CMakeFiles/_Tiller.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.obj"
+	C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.obj -MF CMakeFiles\_Tiller.dir\src\drivers\dummy_encoder_driver.cpp.obj.d -o CMakeFiles\_Tiller.dir\src\drivers\dummy_encoder_driver.cpp.obj -c C:\TillerProject\src\drivers\dummy_encoder_driver.cpp
+
+CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.i"
+	C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\TillerProject\src\drivers\dummy_encoder_driver.cpp > CMakeFiles\_Tiller.dir\src\drivers\dummy_encoder_driver.cpp.i
+
+CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.s"
+	C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\TillerProject\src\drivers\dummy_encoder_driver.cpp -o CMakeFiles\_Tiller.dir\src\drivers\dummy_encoder_driver.cpp.s
 
 # Object files for target _Tiller
 _Tiller_OBJECTS = \
@@ -168,7 +183,8 @@ _Tiller_OBJECTS = \
 "CMakeFiles/_Tiller.dir/src/sensors/encoder_sensor.cpp.obj" \
 "CMakeFiles/_Tiller.dir/src/tta/scheduler.cpp.obj" \
 "CMakeFiles/_Tiller.dir/src/tta/angle_sensor_task.cpp.obj" \
-"CMakeFiles/_Tiller.dir/main.cpp.obj"
+"CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.obj" \
+"CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.obj"
 
 # External object files for target _Tiller
 _Tiller_EXTERNAL_OBJECTS =
@@ -178,10 +194,11 @@ lib_Tiller.a: CMakeFiles/_Tiller.dir/src/sensors/combination_sensor.cpp.obj
 lib_Tiller.a: CMakeFiles/_Tiller.dir/src/sensors/encoder_sensor.cpp.obj
 lib_Tiller.a: CMakeFiles/_Tiller.dir/src/tta/scheduler.cpp.obj
 lib_Tiller.a: CMakeFiles/_Tiller.dir/src/tta/angle_sensor_task.cpp.obj
-lib_Tiller.a: CMakeFiles/_Tiller.dir/main.cpp.obj
+lib_Tiller.a: CMakeFiles/_Tiller.dir/src/drivers/dummy_adc_driver.cpp.obj
+lib_Tiller.a: CMakeFiles/_Tiller.dir/src/drivers/dummy_encoder_driver.cpp.obj
 lib_Tiller.a: CMakeFiles/_Tiller.dir/build.make
 lib_Tiller.a: CMakeFiles/_Tiller.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library lib_Tiller.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library lib_Tiller.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\_Tiller.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\_Tiller.dir\link.txt --verbose=$(VERBOSE)
 

@@ -9,7 +9,6 @@
 #include "encoder_sensor.hpp"
 #include "linear_mapping.hpp"
 
-
 namespace tiller::params
 {
 
@@ -42,5 +41,7 @@ static constexpr CombinationSensor::Params kTillerAngleSensorParams{
 
 static constexpr size_t kMaxNumTasks{
     1};  ///< Number of tasks the scheduler can hold
+
+static constexpr uint64_t kTickPeriodMs{100};
 
 }  // namespace tiller::params
