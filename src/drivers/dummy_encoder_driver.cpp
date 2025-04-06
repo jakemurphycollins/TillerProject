@@ -12,17 +12,18 @@
 namespace tiller
 {
 
-DummyEncoderDriver::DummyEncoderDriver(DummyAdcDriver &absolute_reference)
-    : p_absolute_reference_(&absolute_reference)
+DummyEncoderDriver::DummyEncoderDriver(Params params,
+                                       DummyAdcDriver &absolute_reference)
+    : params_(params), p_absolute_reference_(&absolute_reference)
 {
 }
 
 uint16_t DummyEncoderDriver::Read()
 {
-    int odds_to_increment = rand() % 101;
-    if(odds_to_increment < 20)
+    int odds_to_increment = rand() % (params_.odds_out_of + 1);
+    if(odds_to_increment < params_.odds_to_occur)
     {
-        std::cout << "INFO:\tNot incrementing" << std::endl;
+        std::cout << "INFO:\tInjecting Error" << std::endl;
         return this->last_encoder_tick_;
     }
     this->last_encoder_tick_ += this->p_absolute_reference_->Incrementing()

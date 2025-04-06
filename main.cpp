@@ -18,7 +18,7 @@ using namespace tiller;
 int main()
 {
     DummyAdcDriver adc_driver{params::kADCParams};
-    DummyEncoderDriver encoder_driver{adc_driver};
+    DummyEncoderDriver encoder_driver{params::kEncoderDriverParams, adc_driver};
     PotentiometerSensor potentiometer_sensor{adc_driver};
     EncoderSensor relative_encoder_sensor{params::kTillerEncoderParams,
                                           encoder_driver};

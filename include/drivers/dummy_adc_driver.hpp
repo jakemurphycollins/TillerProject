@@ -18,6 +18,8 @@ class DummyAdcDriver : public IAdcDriver
     {
         float voltage_increment{0};
         std::pair<float, float> limits{0, 0};
+        int odds_out_of{0};
+        int odds_to_change_direction{0};
     };
     DummyAdcDriver(Params params);
     ~DummyAdcDriver() = default;

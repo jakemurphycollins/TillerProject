@@ -17,7 +17,7 @@ float DummyAdcDriver::ReadVoltage()
 {
     this->last_voltage_ += this->increment_ ? this->params_.voltage_increment
                                             : -this->params_.voltage_increment;
-    int odds_to_change_direction = rand() % 10001;
+    int odds_to_change_direction = rand() % (this->params_.odds_out_of + 1);
     if(this->last_voltage_ > this->params_.limits.second)
     {
         this->increment_ = false;
@@ -26,7 +26,7 @@ float DummyAdcDriver::ReadVoltage()
     {
         this->increment_ = true;
     }
-    else if(odds_to_change_direction < 2)
+    else if(odds_to_change_direction < this->params_.odds_to_change_direction)
     {
         std::cout << std::endl
                   << "INFO:\tSwitching Directions" << std::endl

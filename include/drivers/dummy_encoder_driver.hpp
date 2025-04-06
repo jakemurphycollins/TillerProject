@@ -16,14 +16,16 @@ class DummyEncoderDriver : public IEncoderDriver
    public:
     struct Params
     {
-        uint16_t increment{10};
+        uint16_t increment{0};
+        int odds_out_of{0};
+        int odds_to_occur{0};
     };
-    DummyEncoderDriver(DummyAdcDriver &absolute_reference);
+    DummyEncoderDriver(Params params, DummyAdcDriver &absolute_reference);
     ~DummyEncoderDriver() = default;
     [[nodiscard]] uint16_t Read() override;
 
    private:
-    Params params_{};
+    Params params_;
     DummyAdcDriver *p_absolute_reference_;
     uint16_t last_encoder_tick_{0};
 };
