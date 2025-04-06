@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 
 project(TillerProject)
+option(TEST_BUILD, "Build for testing" FALSE)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
@@ -40,14 +41,16 @@ target_include_directories(
 )
 add_library(Tiller ALIAS _Tiller)
 
-add_executable(
-    simulation
-    main.cpp
-)
+if(${TEST_BUILD}) 
+    add_subdirectory(test)  
+else()
+    add_executable(
+        simulation
+        main.cpp
+    )
+    target_link_libraries(
+        simulation
+        Tiller
+    )
+endif()
 
-target_link_libraries(
-    simulation
-    Tiller
-)
-
-#add_subdirectory(test)

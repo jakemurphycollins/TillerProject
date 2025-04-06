@@ -8,7 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/TillerProject/src/sensors/combination_sensor.cpp" "test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.obj" "gcc" "test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.obj.d"
+  "C:/TillerProject/src/sensors/encoder_sensor.cpp" "test/CMakeFiles/code_to_test.dir/__/src/sensors/encoder_sensor.cpp.obj" "gcc" "test/CMakeFiles/code_to_test.dir/__/src/sensors/encoder_sensor.cpp.obj.d"
   "C:/TillerProject/src/sensors/potentiometer_sensor.cpp" "test/CMakeFiles/code_to_test.dir/__/src/sensors/potentiometer_sensor.cpp.obj" "gcc" "test/CMakeFiles/code_to_test.dir/__/src/sensors/potentiometer_sensor.cpp.obj.d"
+  "C:/TillerProject/src/tta/angle_sensor_task.cpp" "test/CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.obj" "gcc" "test/CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.obj.d"
+  "C:/TillerProject/src/tta/scheduler.cpp" "test/CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.obj" "gcc" "test/CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

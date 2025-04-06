@@ -1,0 +1,55 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 20,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "config-base",
+            "hidden": true,
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/build/bin/${presetName}"
+            }
+        },
+        {
+            "name": "tests",
+            "displayName": "Test Config",
+            "description": "Builds for unit testing",
+            "inherits": "config-base",
+            "cacheVariables": {
+                "TEST_BUILD": true
+            }
+        },
+        {
+            "name": "simulation",
+            "displayName": "Simulation Config",
+            "description": "Builds for simulation",
+            "inherits": "config-base",
+            "cacheVariables": {
+                "TEST_BUILD": false
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "build-base",
+            "hidden": true,
+            "jobs": 8
+        },
+        {
+            "name": "tests",
+            "displayName": "Build - Tests",
+            "configurePreset": "tests",
+            "inherits": "build-base"
+        },
+        {
+            "name": "simulation",
+            "displayName": "Build - Simulation",
+            "configurePreset": "simulation",
+            "inherits": "build-base"
+        }
+    ]
+}
