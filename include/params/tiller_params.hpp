@@ -6,11 +6,16 @@
 #include <utility>
 
 #include "combination_sensor.hpp"
+#include "dummy_adc_driver.hpp"
 #include "encoder_sensor.hpp"
 #include "linear_mapping.hpp"
 
 namespace tiller::params
 {
+
+static constexpr std::pair<float, float> kPotentiometerVoltageLimits{0.0F,
+                                                                     5.0F};
+static constexpr std::pair<float, float> kTillerAngleLimits{-90.0F, 90.0F};
 
 /**
  * @brief Params for the linear mapping used by the tiller potentiometer
@@ -18,8 +23,8 @@ namespace tiller::params
  */
 static constexpr utility::LinearMapping<float>::Params
     kPotentiometerMappingParams{
-        .input_limits{0.0F, 5.0F},
-        .output_limits{-90.0F, 90.0F},
+        .input_limits{kPotentiometerVoltageLimits},
+        .output_limits{kTillerAngleLimits},
     };
 
 /**
@@ -42,6 +47,11 @@ static constexpr CombinationSensor::Params kTillerAngleSensorParams{
 static constexpr size_t kMaxNumTasks{
     1};  ///< Number of tasks the scheduler can hold
 
-static constexpr uint64_t kTickPeriodMs{100};
+static constexpr uint64_t kTickPeriodMs{10};
+
+static constexpr DummyAdcDriver::Params kADCParams{
+    .voltage_increment{0.002777777777},  ///< 0.1 degree increments
+    .limits{kPotentiometerVoltageLimits},
+};
 
 }  // namespace tiller::params

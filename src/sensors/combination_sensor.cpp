@@ -5,6 +5,7 @@
 #include "combination_sensor.hpp"
 
 #include <cmath>
+#include <iostream>
 #include <optional>
 
 #include "i_angle_sensor.hpp"
@@ -47,6 +48,14 @@ std::optional<float> CombinationSensor::Read()
             fabs(primary_angle.value() - reference_angle.value());
         if(angle_difference > this->params_.max_drift_deg)
         {
+            std::cout << std::endl
+                      << "ERROR:\tPrimary Sensor Has Exceeded Drift Limit: "
+                      << this->params_.max_drift_deg << " degrees."
+                      << std::endl;
+            std::cout << "\tPrimary Sensor Reads: " << primary_angle.value()
+                      << " degrees and the reference sensor reads: "
+                      << reference_angle.value() << " degrees" << std::endl
+                      << std::endl;
             this->p_primary_sensor_->Reset(reference_angle.value());
             return reference_angle;
         }

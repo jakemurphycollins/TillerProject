@@ -7,6 +7,7 @@
 #include "dummy_adc_driver.hpp"
 #include "dummy_encoder_driver.hpp"
 #include "encoder_sensor.hpp"
+#include "include/params/tiller_params.hpp"
 #include "include/tta/angle_sensor_task.hpp"
 #include "potentiometer_sensor.hpp"
 #include "scheduler.hpp"
@@ -16,8 +17,8 @@
 using namespace tiller;
 int main()
 {
-    DummyAdcDriver adc_driver;
-    DummyEncoderDriver encoder_driver;
+    DummyAdcDriver adc_driver{params::kADCParams};
+    DummyEncoderDriver encoder_driver{adc_driver};
     PotentiometerSensor potentiometer_sensor{adc_driver};
     EncoderSensor relative_encoder_sensor{params::kTillerEncoderParams,
                                           encoder_driver};
