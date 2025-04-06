@@ -3,6 +3,8 @@ add_library(
     ../src/sensors/potentiometer_sensor.cpp
     ../src/sensors/encoder_sensor.cpp
     ../src/sensors/combination_sensor.cpp
+    ../src/tta/scheduler.cpp
+    ../src/tta/angle_sensor_task.cpp
 )
 
 target_include_directories(
@@ -13,6 +15,7 @@ target_include_directories(
     ../include/sensors
     ../include/utilities
     ../include/params
+    ../include/tta
 )
 
 add_executable(
@@ -20,6 +23,7 @@ add_executable(
     sensors/gtest_potentiometer_sensor.cpp
     sensors/gtest_encoder_sensor.cpp
     sensors/gtest_combination_sensor.cpp
+    tta/gtest_scheduler.cpp
 )
 
 target_include_directories(

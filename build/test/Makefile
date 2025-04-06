@@ -260,6 +260,54 @@ __/src/sensors/potentiometer_sensor.cpp.s:
 	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\code_to_test.dir\build.make test/CMakeFiles/code_to_test.dir/__/src/sensors/potentiometer_sensor.cpp.s
 .PHONY : __/src/sensors/potentiometer_sensor.cpp.s
 
+__/src/tta/angle_sensor_task.obj: __/src/tta/angle_sensor_task.cpp.obj
+.PHONY : __/src/tta/angle_sensor_task.obj
+
+# target to build an object file
+__/src/tta/angle_sensor_task.cpp.obj:
+	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\code_to_test.dir\build.make test/CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.obj
+.PHONY : __/src/tta/angle_sensor_task.cpp.obj
+
+__/src/tta/angle_sensor_task.i: __/src/tta/angle_sensor_task.cpp.i
+.PHONY : __/src/tta/angle_sensor_task.i
+
+# target to preprocess a source file
+__/src/tta/angle_sensor_task.cpp.i:
+	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\code_to_test.dir\build.make test/CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.i
+.PHONY : __/src/tta/angle_sensor_task.cpp.i
+
+__/src/tta/angle_sensor_task.s: __/src/tta/angle_sensor_task.cpp.s
+.PHONY : __/src/tta/angle_sensor_task.s
+
+# target to generate assembly for a file
+__/src/tta/angle_sensor_task.cpp.s:
+	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\code_to_test.dir\build.make test/CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.s
+.PHONY : __/src/tta/angle_sensor_task.cpp.s
+
+__/src/tta/scheduler.obj: __/src/tta/scheduler.cpp.obj
+.PHONY : __/src/tta/scheduler.obj
+
+# target to build an object file
+__/src/tta/scheduler.cpp.obj:
+	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\code_to_test.dir\build.make test/CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.obj
+.PHONY : __/src/tta/scheduler.cpp.obj
+
+__/src/tta/scheduler.i: __/src/tta/scheduler.cpp.i
+.PHONY : __/src/tta/scheduler.i
+
+# target to preprocess a source file
+__/src/tta/scheduler.cpp.i:
+	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\code_to_test.dir\build.make test/CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.i
+.PHONY : __/src/tta/scheduler.cpp.i
+
+__/src/tta/scheduler.s: __/src/tta/scheduler.cpp.s
+.PHONY : __/src/tta/scheduler.s
+
+# target to generate assembly for a file
+__/src/tta/scheduler.cpp.s:
+	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\code_to_test.dir\build.make test/CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.s
+.PHONY : __/src/tta/scheduler.cpp.s
+
 sensors/gtest_combination_sensor.obj: sensors/gtest_combination_sensor.cpp.obj
 .PHONY : sensors/gtest_combination_sensor.obj
 
@@ -332,6 +380,30 @@ sensors/gtest_potentiometer_sensor.cpp.s:
 	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\tests.dir\build.make test/CMakeFiles/tests.dir/sensors/gtest_potentiometer_sensor.cpp.s
 .PHONY : sensors/gtest_potentiometer_sensor.cpp.s
 
+tta/gtest_scheduler.obj: tta/gtest_scheduler.cpp.obj
+.PHONY : tta/gtest_scheduler.obj
+
+# target to build an object file
+tta/gtest_scheduler.cpp.obj:
+	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\tests.dir\build.make test/CMakeFiles/tests.dir/tta/gtest_scheduler.cpp.obj
+.PHONY : tta/gtest_scheduler.cpp.obj
+
+tta/gtest_scheduler.i: tta/gtest_scheduler.cpp.i
+.PHONY : tta/gtest_scheduler.i
+
+# target to preprocess a source file
+tta/gtest_scheduler.cpp.i:
+	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\tests.dir\build.make test/CMakeFiles/tests.dir/tta/gtest_scheduler.cpp.i
+.PHONY : tta/gtest_scheduler.cpp.i
+
+tta/gtest_scheduler.s: tta/gtest_scheduler.cpp.s
+.PHONY : tta/gtest_scheduler.s
+
+# target to generate assembly for a file
+tta/gtest_scheduler.cpp.s:
+	cd /d C:\TillerProject\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\tests.dir\build.make test/CMakeFiles/tests.dir/tta/gtest_scheduler.cpp.s
+.PHONY : tta/gtest_scheduler.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -355,6 +427,12 @@ help:
 	@echo ... __/src/sensors/potentiometer_sensor.obj
 	@echo ... __/src/sensors/potentiometer_sensor.i
 	@echo ... __/src/sensors/potentiometer_sensor.s
+	@echo ... __/src/tta/angle_sensor_task.obj
+	@echo ... __/src/tta/angle_sensor_task.i
+	@echo ... __/src/tta/angle_sensor_task.s
+	@echo ... __/src/tta/scheduler.obj
+	@echo ... __/src/tta/scheduler.i
+	@echo ... __/src/tta/scheduler.s
 	@echo ... sensors/gtest_combination_sensor.obj
 	@echo ... sensors/gtest_combination_sensor.i
 	@echo ... sensors/gtest_combination_sensor.s
@@ -364,6 +442,9 @@ help:
 	@echo ... sensors/gtest_potentiometer_sensor.obj
 	@echo ... sensors/gtest_potentiometer_sensor.i
 	@echo ... sensors/gtest_potentiometer_sensor.s
+	@echo ... tta/gtest_scheduler.obj
+	@echo ... tta/gtest_scheduler.i
+	@echo ... tta/gtest_scheduler.s
 .PHONY : help
 
 

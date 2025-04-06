@@ -22,6 +22,8 @@ add_library(
     src/sensors/potentiometer_sensor.cpp
     src/sensors/combination_sensor.cpp
     src/sensors/encoder_sensor.cpp
+    src/tta/scheduler.cpp
+    src/tta/angle_sensor_task.cpp
     main.cpp
 )
 
@@ -32,6 +34,7 @@ target_include_directories(
     include/sensors/
     include/utilities/
     include/params/
+    include/tta/
 )
 add_library(Tiller ALIAS _Tiller)
 

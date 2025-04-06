@@ -1,10 +1,17 @@
+/*
+ *   Copyright (c) 2025
+ *   All rights reserved.
+ */
 #pragma once
+#include <utility>
+
 #include "combination_sensor.hpp"
 #include "encoder_sensor.hpp"
 #include "linear_mapping.hpp"
-#include <utility>
 
-namespace tiller::params {
+
+namespace tiller::params
+{
 
 /**
  * @brief Params for the linear mapping used by the tiller potentiometer
@@ -33,4 +40,7 @@ static constexpr CombinationSensor::Params kTillerAngleSensorParams{
     .max_drift_deg{2.0F},
 };
 
-} // namespace tiller::params
+static constexpr size_t kMaxNumTasks{
+    1};  ///< Number of tasks the scheduler can hold
+
+}  // namespace tiller::params

@@ -116,11 +116,43 @@ test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.s: cmake_
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.s"
 	cd /d C:\TillerProject\build\test && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\TillerProject\src\sensors\combination_sensor.cpp -o CMakeFiles\code_to_test.dir\__\src\sensors\combination_sensor.cpp.s
 
+test/CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.obj: test/CMakeFiles/code_to_test.dir/flags.make
+test/CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.obj: test/CMakeFiles/code_to_test.dir/includes_CXX.rsp
+test/CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.obj: C:/TillerProject/src/tta/scheduler.cpp
+test/CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.obj: test/CMakeFiles/code_to_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.obj"
+	cd /d C:\TillerProject\build\test && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.obj -MF CMakeFiles\code_to_test.dir\__\src\tta\scheduler.cpp.obj.d -o CMakeFiles\code_to_test.dir\__\src\tta\scheduler.cpp.obj -c C:\TillerProject\src\tta\scheduler.cpp
+
+test/CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.i"
+	cd /d C:\TillerProject\build\test && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\TillerProject\src\tta\scheduler.cpp > CMakeFiles\code_to_test.dir\__\src\tta\scheduler.cpp.i
+
+test/CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.s"
+	cd /d C:\TillerProject\build\test && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\TillerProject\src\tta\scheduler.cpp -o CMakeFiles\code_to_test.dir\__\src\tta\scheduler.cpp.s
+
+test/CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.obj: test/CMakeFiles/code_to_test.dir/flags.make
+test/CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.obj: test/CMakeFiles/code_to_test.dir/includes_CXX.rsp
+test/CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.obj: C:/TillerProject/src/tta/angle_sensor_task.cpp
+test/CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.obj: test/CMakeFiles/code_to_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object test/CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.obj"
+	cd /d C:\TillerProject\build\test && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.obj -MF CMakeFiles\code_to_test.dir\__\src\tta\angle_sensor_task.cpp.obj.d -o CMakeFiles\code_to_test.dir\__\src\tta\angle_sensor_task.cpp.obj -c C:\TillerProject\src\tta\angle_sensor_task.cpp
+
+test/CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.i"
+	cd /d C:\TillerProject\build\test && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\TillerProject\src\tta\angle_sensor_task.cpp > CMakeFiles\code_to_test.dir\__\src\tta\angle_sensor_task.cpp.i
+
+test/CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.s"
+	cd /d C:\TillerProject\build\test && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\TillerProject\src\tta\angle_sensor_task.cpp -o CMakeFiles\code_to_test.dir\__\src\tta\angle_sensor_task.cpp.s
+
 # Object files for target code_to_test
 code_to_test_OBJECTS = \
 "CMakeFiles/code_to_test.dir/__/src/sensors/potentiometer_sensor.cpp.obj" \
 "CMakeFiles/code_to_test.dir/__/src/sensors/encoder_sensor.cpp.obj" \
-"CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.obj"
+"CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.obj" \
+"CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.obj" \
+"CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.obj"
 
 # External object files for target code_to_test
 code_to_test_EXTERNAL_OBJECTS =
@@ -128,9 +160,11 @@ code_to_test_EXTERNAL_OBJECTS =
 test/libcode_to_test.a: test/CMakeFiles/code_to_test.dir/__/src/sensors/potentiometer_sensor.cpp.obj
 test/libcode_to_test.a: test/CMakeFiles/code_to_test.dir/__/src/sensors/encoder_sensor.cpp.obj
 test/libcode_to_test.a: test/CMakeFiles/code_to_test.dir/__/src/sensors/combination_sensor.cpp.obj
+test/libcode_to_test.a: test/CMakeFiles/code_to_test.dir/__/src/tta/scheduler.cpp.obj
+test/libcode_to_test.a: test/CMakeFiles/code_to_test.dir/__/src/tta/angle_sensor_task.cpp.obj
 test/libcode_to_test.a: test/CMakeFiles/code_to_test.dir/build.make
 test/libcode_to_test.a: test/CMakeFiles/code_to_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libcode_to_test.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libcode_to_test.a"
 	cd /d C:\TillerProject\build\test && $(CMAKE_COMMAND) -P CMakeFiles\code_to_test.dir\cmake_clean_target.cmake
 	cd /d C:\TillerProject\build\test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\code_to_test.dir\link.txt --verbose=$(VERBOSE)
 

@@ -12,6 +12,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/TillerProject/src/sensors/combination_sensor.cpp" "CMakeFiles/_Tiller.dir/src/sensors/combination_sensor.cpp.obj" "gcc" "CMakeFiles/_Tiller.dir/src/sensors/combination_sensor.cpp.obj.d"
   "C:/TillerProject/src/sensors/encoder_sensor.cpp" "CMakeFiles/_Tiller.dir/src/sensors/encoder_sensor.cpp.obj" "gcc" "CMakeFiles/_Tiller.dir/src/sensors/encoder_sensor.cpp.obj.d"
   "C:/TillerProject/src/sensors/potentiometer_sensor.cpp" "CMakeFiles/_Tiller.dir/src/sensors/potentiometer_sensor.cpp.obj" "gcc" "CMakeFiles/_Tiller.dir/src/sensors/potentiometer_sensor.cpp.obj.d"
+  "C:/TillerProject/src/tta/angle_sensor_task.cpp" "CMakeFiles/_Tiller.dir/src/tta/angle_sensor_task.cpp.obj" "gcc" "CMakeFiles/_Tiller.dir/src/tta/angle_sensor_task.cpp.obj.d"
+  "C:/TillerProject/src/tta/scheduler.cpp" "CMakeFiles/_Tiller.dir/src/tta/scheduler.cpp.obj" "gcc" "CMakeFiles/_Tiller.dir/src/tta/scheduler.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

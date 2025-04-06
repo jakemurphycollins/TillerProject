@@ -347,6 +347,54 @@ src/sensors/potentiometer_sensor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/sensors/potentiometer_sensor.cpp.s
 .PHONY : src/sensors/potentiometer_sensor.cpp.s
 
+src/tta/angle_sensor_task.obj: src/tta/angle_sensor_task.cpp.obj
+.PHONY : src/tta/angle_sensor_task.obj
+
+# target to build an object file
+src/tta/angle_sensor_task.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/tta/angle_sensor_task.cpp.obj
+.PHONY : src/tta/angle_sensor_task.cpp.obj
+
+src/tta/angle_sensor_task.i: src/tta/angle_sensor_task.cpp.i
+.PHONY : src/tta/angle_sensor_task.i
+
+# target to preprocess a source file
+src/tta/angle_sensor_task.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/tta/angle_sensor_task.cpp.i
+.PHONY : src/tta/angle_sensor_task.cpp.i
+
+src/tta/angle_sensor_task.s: src/tta/angle_sensor_task.cpp.s
+.PHONY : src/tta/angle_sensor_task.s
+
+# target to generate assembly for a file
+src/tta/angle_sensor_task.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/tta/angle_sensor_task.cpp.s
+.PHONY : src/tta/angle_sensor_task.cpp.s
+
+src/tta/scheduler.obj: src/tta/scheduler.cpp.obj
+.PHONY : src/tta/scheduler.obj
+
+# target to build an object file
+src/tta/scheduler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/tta/scheduler.cpp.obj
+.PHONY : src/tta/scheduler.cpp.obj
+
+src/tta/scheduler.i: src/tta/scheduler.cpp.i
+.PHONY : src/tta/scheduler.i
+
+# target to preprocess a source file
+src/tta/scheduler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/tta/scheduler.cpp.i
+.PHONY : src/tta/scheduler.cpp.i
+
+src/tta/scheduler.s: src/tta/scheduler.cpp.s
+.PHONY : src/tta/scheduler.s
+
+# target to generate assembly for a file
+src/tta/scheduler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\_Tiller.dir\build.make CMakeFiles/_Tiller.dir/src/tta/scheduler.cpp.s
+.PHONY : src/tta/scheduler.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -378,6 +426,12 @@ help:
 	@echo ... src/sensors/potentiometer_sensor.obj
 	@echo ... src/sensors/potentiometer_sensor.i
 	@echo ... src/sensors/potentiometer_sensor.s
+	@echo ... src/tta/angle_sensor_task.obj
+	@echo ... src/tta/angle_sensor_task.i
+	@echo ... src/tta/angle_sensor_task.s
+	@echo ... src/tta/scheduler.obj
+	@echo ... src/tta/scheduler.i
+	@echo ... src/tta/scheduler.s
 .PHONY : help
 
 

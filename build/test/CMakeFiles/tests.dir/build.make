@@ -116,11 +116,27 @@ test/CMakeFiles/tests.dir/sensors/gtest_combination_sensor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/sensors/gtest_combination_sensor.cpp.s"
 	cd /d C:\TillerProject\build\test && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\TillerProject\test\sensors\gtest_combination_sensor.cpp -o CMakeFiles\tests.dir\sensors\gtest_combination_sensor.cpp.s
 
+test/CMakeFiles/tests.dir/tta/gtest_scheduler.cpp.obj: test/CMakeFiles/tests.dir/flags.make
+test/CMakeFiles/tests.dir/tta/gtest_scheduler.cpp.obj: test/CMakeFiles/tests.dir/includes_CXX.rsp
+test/CMakeFiles/tests.dir/tta/gtest_scheduler.cpp.obj: C:/TillerProject/test/tta/gtest_scheduler.cpp
+test/CMakeFiles/tests.dir/tta/gtest_scheduler.cpp.obj: test/CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/tests.dir/tta/gtest_scheduler.cpp.obj"
+	cd /d C:\TillerProject\build\test && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/tests.dir/tta/gtest_scheduler.cpp.obj -MF CMakeFiles\tests.dir\tta\gtest_scheduler.cpp.obj.d -o CMakeFiles\tests.dir\tta\gtest_scheduler.cpp.obj -c C:\TillerProject\test\tta\gtest_scheduler.cpp
+
+test/CMakeFiles/tests.dir/tta/gtest_scheduler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/tta/gtest_scheduler.cpp.i"
+	cd /d C:\TillerProject\build\test && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\TillerProject\test\tta\gtest_scheduler.cpp > CMakeFiles\tests.dir\tta\gtest_scheduler.cpp.i
+
+test/CMakeFiles/tests.dir/tta/gtest_scheduler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tta/gtest_scheduler.cpp.s"
+	cd /d C:\TillerProject\build\test && C:\w64devkit\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\TillerProject\test\tta\gtest_scheduler.cpp -o CMakeFiles\tests.dir\tta\gtest_scheduler.cpp.s
+
 # Object files for target tests
 tests_OBJECTS = \
 "CMakeFiles/tests.dir/sensors/gtest_potentiometer_sensor.cpp.obj" \
 "CMakeFiles/tests.dir/sensors/gtest_encoder_sensor.cpp.obj" \
-"CMakeFiles/tests.dir/sensors/gtest_combination_sensor.cpp.obj"
+"CMakeFiles/tests.dir/sensors/gtest_combination_sensor.cpp.obj" \
+"CMakeFiles/tests.dir/tta/gtest_scheduler.cpp.obj"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
@@ -128,6 +144,7 @@ tests_EXTERNAL_OBJECTS =
 test/tests.exe: test/CMakeFiles/tests.dir/sensors/gtest_potentiometer_sensor.cpp.obj
 test/tests.exe: test/CMakeFiles/tests.dir/sensors/gtest_encoder_sensor.cpp.obj
 test/tests.exe: test/CMakeFiles/tests.dir/sensors/gtest_combination_sensor.cpp.obj
+test/tests.exe: test/CMakeFiles/tests.dir/tta/gtest_scheduler.cpp.obj
 test/tests.exe: test/CMakeFiles/tests.dir/build.make
 test/tests.exe: test/libcode_to_test.a
 test/tests.exe: lib/libgtest_main.a
@@ -137,7 +154,7 @@ test/tests.exe: lib/libgtest.a
 test/tests.exe: test/CMakeFiles/tests.dir/linkLibs.rsp
 test/tests.exe: test/CMakeFiles/tests.dir/objects1.rsp
 test/tests.exe: test/CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable tests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\TillerProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tests.exe"
 	cd /d C:\TillerProject\build\test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\tests.dir\link.txt --verbose=$(VERBOSE)
 	cd /d C:\TillerProject\build\test && "C:\Program Files\CMake\bin\cmake.exe" -D TEST_TARGET=tests -D TEST_EXECUTABLE=C:/TillerProject/build/test/tests.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/TillerProject/build/test -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=tests_TESTS -D CTEST_FILE=C:/TillerProject/build/test/tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/CMake/share/cmake-4.0/Modules/GoogleTestAddTests.cmake"
 
