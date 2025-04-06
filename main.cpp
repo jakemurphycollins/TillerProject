@@ -2,6 +2,10 @@
  *   Copyright (c) 2025
  *   All rights reserved.
  */
+#include <time.h>
+
+#include <cstdlib>
+
 #include "angle_sensor_task.hpp"
 #include "combination_sensor.hpp"
 #include "dummy_adc_driver.hpp"
@@ -17,6 +21,8 @@
 using namespace tiller;
 int main()
 {
+    // Reseed random
+    srand(time(NULL));
     DummyAdcDriver adc_driver{params::kADCParams};
     DummyEncoderDriver encoder_driver{params::kEncoderDriverParams, adc_driver};
     PotentiometerSensor potentiometer_sensor{adc_driver};

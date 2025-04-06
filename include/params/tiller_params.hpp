@@ -15,8 +15,8 @@
 namespace tiller::params
 {
 
-static constexpr float kAngleIncrementDegrees{0.1};
-static constexpr uint64_t kTickPeriodMs{10};
+static constexpr float kAngleIncrementDegrees{0.5};
+static constexpr uint64_t kTickPeriodMs{100};
 static constexpr std::pair<float, float> kPotentiometerVoltageLimits{0.0F,
                                                                      5.0F};
 static constexpr std::pair<float, float> kTillerAngleLimits{-90.0F, 90.0F};
@@ -59,15 +59,15 @@ static constexpr DummyAdcDriver::Params kADCParams{
          (kTillerAngleLimits.second - kTillerAngleLimits.first)),
     .limits = kPotentiometerVoltageLimits,
     .odds_out_of = 1000,            ///< Odds are out of 1000
-    .odds_to_change_direction = 2,  ///< 0.2% chance of changing direction, note
-                                    ///< this is checked every loop
+    .odds_to_change_direction = 2,  ///< 0.2% chance of changing direction,
+                                    ///< note this is checked every loop
 };
 
 static constexpr DummyEncoderDriver::Params kEncoderDriverParams{
     .increment = static_cast<uint16_t>(
         kAngleIncrementDegrees / kTillerEncoderParams.degrees_per_encoder_tick),
-    .odds_out_of = 100,   ///< Odds are out of 100
-    .odds_to_occur = 20,  ///< 20% odds of an encoder error being injected
+    .odds_out_of = 100,  ///< Odds are out of 100
+    .odds_to_occur = 4,  ///< 20% odds of an encoder error being injected
 };
 
 }  // namespace tiller::params

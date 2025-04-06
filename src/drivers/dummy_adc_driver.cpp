@@ -11,7 +11,11 @@
 namespace tiller
 {
 
-DummyAdcDriver::DummyAdcDriver(Params params) : params_(params) {}
+DummyAdcDriver::DummyAdcDriver(Params params) : params_(params)
+{
+    int initial_voltage = rand() % 5001;
+    this->last_voltage_ = static_cast<float>(initial_voltage) / 1000.0F;
+}
 
 float DummyAdcDriver::ReadVoltage()
 {

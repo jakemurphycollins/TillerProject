@@ -28,7 +28,7 @@ class DummyAdcDriver : public IAdcDriver
 
    private:
     Params params_;
-    float last_voltage_{0.0F};
+    float last_voltage_;
     bool increment_{true};
 };
 
