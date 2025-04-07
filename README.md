@@ -13,6 +13,9 @@ To build and run the simulation and the tests, you'll need download the followin
 **_NOTE:_** The compiled build folder was included in the zip file, if you just want to run the output skip to step 4
 1. Open a terminal and navigate to the root of the project `/TillerProject`
 2. Run: `cmake --preset tests`
+   - If you just copied the project to your system, you will need to clean
+       - Remove the build folder: `rm -rf build`
+       - Re-run `cmake --preset simulation`. Sometimes Windows Anti-Virus can cause this step to fail, you can either run it twice or turn it off if thats the case for you
 3. Run: `cmake --build --preset tests`
 4. Run: `cd .\build\tests\test\ ; ctest`
 
@@ -36,10 +39,13 @@ All of the project parameters are stored in `include/params/tiller_params.hpp`.
 - `kEncoderTicksPerDegree`: Controls the resolution of the encoder sensor
 - `kSmallestAngleChange`: Controls the smallest angle change for each angle update
 - All of the odds are. These control the odds for the tiller direction to change and the odds for the encoder to drop ticks / slip
-- 
+
 ### To Build and Launch The Simulation
 1. Navigate to the project root `/TillerProject`
 2. Run: `cmake --preset simulation`
+     - If you just copied the project to your system, you will need to clean
+        - Remove the build folder: `rm -rf build`
+        - Re-run `cmake --preset simulation`. Sometimes Windows Anti-Virus can cause this step to fail, you can either run it twice or turn it off if thats the case for you
 3. Run: `cmake --build --preset simulation`
 4. Run: `cd .\build\bin\simulation\ ; ./simulation.exe`
 5. Kill The Simulation With: `^C`
