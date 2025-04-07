@@ -10,7 +10,6 @@ To build and run the simulation and the tests, you'll need download the followin
 - A C / C++ compiler (For Windows: https://www.mingw-w64.org/downloads/#w64devkit)
 
 ## How To Run Unit Tests
-**_NOTE:_** The compiled build folder was included in the zip file, if you just want to run the output skip to step 4
 1. Open a terminal and navigate to the root of the project `/TillerProject`
 2. Run: `cmake --preset tests`
    - If you just copied the project to your system, you will need to clean
@@ -31,7 +30,6 @@ The testing output shows each of the following with a pair of lines
   - This is handy to tell what conditions or functions are hogging resources
 
 ## How To Run Simulation
-**_NOTE:_** The compiled build folder was included in the zip file, if you just want to run the output skip to step 4 of `To Build And Launch The Simulation`
 ### To Configure The Simulation
 All of the project parameters are stored in `include/params/tiller_params.hpp`. 
 #### Key Params To Consider Messing With
