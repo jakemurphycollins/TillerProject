@@ -4,32 +4,35 @@
  */
 #include "dummy_encoder_driver.hpp"
 
+#include <cmath>
 #include <cstdlib>
-#include <iostream>
 
-#include "dummy_adc_driver.hpp"
+#include "tiller_params.hpp"
 
 namespace tiller
 {
 
-DummyEncoderDriver::DummyEncoderDriver(Params params,
-                                       DummyAdcDriver &absolute_reference)
-    : params_(params), p_absolute_reference_(&absolute_reference)
+DummyEncoderDriver::DummyEncoderDriver(uint16_t encoder_ticks_per_deg)
+    : encoder_ticks_per_deg_(encoder_ticks_per_deg)
 {
 }
 
 uint16_t DummyEncoderDriver::Read()
 {
-    int odds_to_increment = rand() % (params_.odds_out_of + 1);
-    if(odds_to_increment < params_.odds_to_occur)
+    bool encoder_slip{rand() % (params::kOddsOutOfToDropEncoderTicks) <
+                      params::kOddsToDropEncoderTicks};
+    if(encoder_slip)
     {
-        std::cout << "INFO:\tInjecting Error" << std::endl;
-        return this->last_encoder_tick_;
+        this->angle_offset_deg_ += params::kSmallestAngleChange;
     }
-    this->last_encoder_tick_ += this->p_absolute_reference_->Incrementing()
-                                    ? params_.increment
-                                    : -params_.increment;
-    return this->last_encoder_tick_;
+    return static_cast<uint16_t>(
+        std::floor(this->encoder_ticks_per_deg_ *
+                   (this->current_angle_deg_ - this->angle_offset_deg_)));
+}
+
+void DummyEncoderDriver::SetAngle(float new_angle)
+{
+    this->current_angle_deg_ = new_angle;
 }
 
 }  // namespace tiller

@@ -3,6 +3,8 @@
  *   All rights reserved.
  */
 #pragma once
+#include <stdint.h>
+
 #include <cstdint>
 #include <utility>
 
@@ -20,6 +22,22 @@ static constexpr uint64_t kTickPeriodMs{100};
 static constexpr std::pair<float, float> kPotentiometerVoltageLimits{0.0F,
                                                                      5.0F};
 static constexpr std::pair<float, float> kTillerAngleLimits{-90.0F, 90.0F};
+static constexpr uint16_t kEncoderTicksPerDegree{100};
+
+///< The smallest angle change per iteration, note this is also the amount the
+///< encoder "slips". So if its decreased, it will take longer to accumulate
+///< encoder error and vice versa if its increased
+static constexpr float kSmallestAngleChange{0.1};
+
+///< 20 out of 100 odds to miss an encoder change
+static constexpr int kOddsOutOfToDropEncoderTicks{100};
+static constexpr int kOddsToDropEncoderTicks{20};
+
+///< 15 out of 10,000 odds to change directions each time a new angle is
+///< written, changes direction often. You can reduce the odds to in order to
+///< reduce the occurance
+static constexpr int kOddsOutOfToChangeDirection{10000};
+static constexpr int kOddsToChangeDirection{15};
 
 /**
  * @brief Params for the linear mapping used by the tiller potentiometer
@@ -50,24 +68,5 @@ static constexpr CombinationSensor::Params kTillerAngleSensorParams{
 
 static constexpr size_t kMaxNumTasks{
     1};  ///< Number of tasks the scheduler can hold
-
-static constexpr DummyAdcDriver::Params kADCParams{
-    .voltage_increment =
-        kAngleIncrementDegrees *
-        ((kPotentiometerVoltageLimits.second -
-          kPotentiometerVoltageLimits.first) /
-         (kTillerAngleLimits.second - kTillerAngleLimits.first)),
-    .limits = kPotentiometerVoltageLimits,
-    .odds_out_of = 1000,            ///< Odds are out of 1000
-    .odds_to_change_direction = 2,  ///< 0.2% chance of changing direction,
-                                    ///< note this is checked every loop
-};
-
-static constexpr DummyEncoderDriver::Params kEncoderDriverParams{
-    .increment = static_cast<uint16_t>(
-        kAngleIncrementDegrees / kTillerEncoderParams.degrees_per_encoder_tick),
-    .odds_out_of = 100,  ///< Odds are out of 100
-    .odds_to_occur = 4,  ///< 20% odds of an encoder error being injected
-};
 
 }  // namespace tiller::params

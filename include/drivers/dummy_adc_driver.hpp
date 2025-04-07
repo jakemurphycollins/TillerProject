@@ -3,10 +3,9 @@
  *   All rights reserved.
  */
 #pragma once
-
-#include <utility>
-
 #include "i_adc_driver.hpp"
+#include "linear_mapping.hpp"
+#include "params/tiller_params.hpp"
 
 namespace tiller
 {
@@ -14,22 +13,14 @@ namespace tiller
 class DummyAdcDriver : public IAdcDriver
 {
    public:
-    struct Params
-    {
-        float voltage_increment{0};
-        std::pair<float, float> limits{0, 0};
-        int odds_out_of{0};
-        int odds_to_change_direction{0};
-    };
-    DummyAdcDriver(Params params);
+    DummyAdcDriver();
     ~DummyAdcDriver() = default;
     [[nodiscard]] float ReadVoltage() override;
-    bool Incrementing();
+    void SetAngle(float new_angle);
 
    private:
-    Params params_;
-    float last_voltage_;
-    bool increment_{true};
+    float current_angle_deg_;
+    utility::LinearMapping<float> map_;
 };
 
 }  // namespace tiller

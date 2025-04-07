@@ -14,20 +14,15 @@ namespace tiller
 class DummyEncoderDriver : public IEncoderDriver
 {
    public:
-    struct Params
-    {
-        uint16_t increment{0};
-        int odds_out_of{0};
-        int odds_to_occur{0};
-    };
-    DummyEncoderDriver(Params params, DummyAdcDriver &absolute_reference);
+    DummyEncoderDriver(uint16_t encoder_ticks_per_deg);
     ~DummyEncoderDriver() = default;
     [[nodiscard]] uint16_t Read() override;
+    void SetAngle(float new_angle);
 
    private:
-    Params params_;
-    DummyAdcDriver *p_absolute_reference_;
-    uint16_t last_encoder_tick_{0};
+    uint16_t encoder_ticks_per_deg_;
+    float current_angle_deg_{0};
+    float angle_offset_deg_{0};
 };
 
 }  // namespace tiller
