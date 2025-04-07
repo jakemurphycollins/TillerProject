@@ -9,7 +9,6 @@
 #include "gmock_angle_sensor.hpp"
 #include "tiller_params.hpp"
 
-
 namespace tiller
 {
 

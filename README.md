@@ -1,3 +1,5 @@
+## Description
+
 ## Installation
 To build and run the simulation and the tests, you'll need download the following packages and assign them to the PATH
 - Python (https://www.python.org/downloads/)

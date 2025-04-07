@@ -9,6 +9,11 @@
 namespace tiller
 {
 
+/**
+ * @brief Returns the current time in millis
+ *
+ * @return uint64_t Time in milliseconds
+ */
 static uint64_t millis()
 {
     return std::chrono::duration_cast<std::chrono::milliseconds>(

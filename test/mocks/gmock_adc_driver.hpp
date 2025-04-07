@@ -1,13 +1,21 @@
+/*
+ *   Copyright (c) 2025
+ *   All rights reserved.
+ */
 #pragma once
 
-#include "i_adc_driver.hpp"
 #include <gmock/gmock.h>
 
-namespace tiller {
+#include "i_adc_driver.hpp"
 
-class MockAdcDriver : public IAdcDriver {
-public:
-  MOCK_METHOD(float, ReadVoltage, (), (override));
+
+namespace tiller
+{
+
+class MockAdcDriver : public IAdcDriver
+{
+   public:
+    MOCK_METHOD(float, ReadVoltage, (), (override));
 };
 
-} // namespace tiller
+}  // namespace tiller

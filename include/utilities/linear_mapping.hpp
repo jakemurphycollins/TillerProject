@@ -62,6 +62,12 @@ class LinearMapping
                                     this->params_.output_limits.second);
     }
 
+    /**
+     * @brief Unmaps from the output range to the given input range
+     *
+     * @param input The value to map
+     * @return DataType The mapped output
+     */
     DataType UnMap(DataType input)
     {
         DataType output = (input - this->intercept_) / this->slope_;

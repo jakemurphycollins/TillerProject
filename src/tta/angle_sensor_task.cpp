@@ -14,7 +14,7 @@ AngleSensorTask::AngleSensorTask(IAngleSensor &angle_sensor)
 {
 }
 
-void AngleSensorTask::RunIfReady(uint64_t /*current_tick*/)
+void AngleSensorTask::RunIfReady(uint64_t /*current_time_ms*/)
 {
     auto current_angle = this->p_angle_sensor_->Read();
     if(current_angle.has_value())
