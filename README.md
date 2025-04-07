@@ -1,4 +1,7 @@
 ## Description
+Project implements a combined sensor that reads the tiller angle from a relative encoder and an absolute potentiometer. The relative encoder has the issue of slipping / dropping encoder ticks occassionally. When enough ticks have been dropped and the angle estimation drifts far enough from the potentiometer's estimation, then the combined sensor class fixes it. The combined sensor class fixes the estimation by resetting the encoder sensor with the current reading from the potentiometer. The sensor reading is then collected at a regular rate from time-triggered task and the task prints the value to COUT. The scheduler for the time-triggered architecture runs in one thread. This thread retrieves the tiller angles from two dummy classes that mock an encoder driver and an adc driver. Those two objects are shared with the other thread that supplies them with the tiller angle.
+
+The other thread calculates the next tiller angle and then updates both the dummy encoder driver and dummy adc driver. To avoid both threads using the dummy objects at the same time, they share a mutex that they need to lock in order to either update or read the dummy classes.
 
 ## Installation
 To build and run the simulation and the tests, you'll need download the following packages and assign them to the PATH
